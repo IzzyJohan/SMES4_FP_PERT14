@@ -19,16 +19,7 @@ function Home() {
   function getHome() {
     dispatch(updateLocal(local))
   }
-
-
-  /**
-   * Note
-   * Dispatch home works
-   * Can't create new data after dispatch home
-   * local dan API object rendered both, API object first then local
-   * The form inputed new data goes to API oject, not local
-   */
-
+  
   return(
     <div>
       <Hero />
