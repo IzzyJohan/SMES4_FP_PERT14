@@ -14,7 +14,7 @@ function AddMovieForm() {
     // Membuat dispatch
     const dispatch = useDispatch();
 
-    // Membuat state object 
+    // Membuat state object     
     const [formData, setFormData] = useState({
         title: "",
         date: "",
@@ -28,7 +28,7 @@ function AddMovieForm() {
 
         setFormData({
             ...formData,
-            [name]: value,
+            [name]: value,  
         });
     }
 

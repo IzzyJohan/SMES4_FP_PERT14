@@ -21,8 +21,6 @@ function NowPlaying() {
         const response = await axios(ENDPOINTS.NOWPLAYING);
 
         dispatch(updateMovies(response.data.results));
-
-
   }
 
   return (

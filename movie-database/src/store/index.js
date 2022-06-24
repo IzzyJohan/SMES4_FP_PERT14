@@ -4,7 +4,7 @@ import moviesReducer from "../features/moviesSlice";
 
 /**
  * Buat store: state global
- * Menyimpan berbagai slice reducer
+ * Menyimpan berbagai slice reducer 
  */
 
 const store  = configureStore({

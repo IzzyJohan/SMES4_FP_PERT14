@@ -40,10 +40,6 @@ const StyledNavbar = styled.div`
         li {
             margin: 0 1rem;
         }
-
-        h1 {
-            margin: 0;
-        }
     }
 `;
 

@@ -26,6 +26,7 @@ const StyledHero = styled.div`
     img {
         max-width: 100%;
         border-radius: 12px;
+        margin-bottom: 2rem;
     }
 
     @media screen and (min-width: 992px) {

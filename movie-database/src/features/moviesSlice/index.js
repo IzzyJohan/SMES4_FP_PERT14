@@ -9,24 +9,28 @@ import data from "../../components/utils/data";
 const moviesSlice  = createSlice({
     name: "Movie Slice",
     initialState: {
-        movies: data
+        movies: [],
+        local:  data,
     },
     reducers: {
         addMovie(state, action) {
             // Add movie to movies
-            state.movies.push(action.payload);
+            state.local.push(action.payload);
         },
         updateMovies(state, action) {
             state.movies = action.payload;
         },
+        updateLocal(state, action) {
+            state.movies = action.payload;
+        },
         deleteMovie() {}
-    }
+    },
 });
 
 // Generate action dan reducer
 const moviesReducer = moviesSlice.reducer;
-const { addMovie, updateMovies, deleteMovie } = moviesSlice.actions;
+const { addMovie, updateMovies, deleteMovie, updateLocal } = moviesSlice.actions;
 
 // Export action dan reducer 
 export default moviesReducer;
-export { addMovie, updateMovies, deleteMovie };
+export { addMovie, updateMovies, deleteMovie, updateLocal };

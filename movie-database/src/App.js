@@ -22,7 +22,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Layout>
+          <Layout>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/movie/create" element={<CreateMovie />} />
